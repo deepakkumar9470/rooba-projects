@@ -1,0 +1,93 @@
+@import "../../styles/media.scss";
+@import "../../styles/variables.scss";
+@import "../../styles/mixin.scss";
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../../assets/bg.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1.5rem;
+
+  h2 {
+    font-size: 6rem;
+    text-align: center;
+    font-weight: 200;
+    color: $white;
+    font-family: "Times New Roman", Times, serif;
+    font-style: italic;
+    cursor: pointer;
+    span {
+      font-weight: 400;
+      margin-left: 20rem;
+    }
+  }
+  p {
+    font-size: 1.6rem;
+    text-align: center;
+    font-weight: 500;
+    color: $white;
+    cursor: pointer;
+    span {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 100%;
+    height: 50vh;
+    h2 {
+      font-size: 2.8rem;
+      span {
+        margin-left: 5rem;
+      }
+    }
+
+    p {
+      font-size: 1.4rem;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+    height: 50vh;
+    h2 {
+      font-size: 3.2rem;
+      span {
+        margin-left: 5rem;
+      }
+    }
+
+    p {
+      font-size: 1.4rem;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .container {
+    width: 100%;
+    height: 50vh;
+    h2 {
+      font-size: 3.2rem;
+      span {
+        margin-left: 5rem;
+      }
+    }
+
+    p {
+      font-size: 1.4rem;
+    }
+  }
+}

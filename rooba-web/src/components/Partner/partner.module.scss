@@ -1,0 +1,88 @@
+@import "../../styles/media.scss";
+@import "../../styles/variables.scss";
+@import "../../styles/mixin.scss";
+
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 10rem;
+
+  p {
+    font-size: 3.2rem;
+    font-weight: 600;
+    text-align: center;
+    padding: 0 15rem;
+    cursor: pointer;
+  }
+
+  hr {
+    width: 75%;
+    height: 0.2rem;
+    background-color: $link-color2;
+  }
+
+  .partnerCarousel {
+    .sliderDiv {
+      max-width: 120rem;
+      width: 100%;
+      padding: 1rem 5rem;
+      .imgSlide {
+        width: 80rem;
+
+        img {
+          width: 10rem;
+          object-fit: contain;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 5rem;
+
+    p {
+      font-size: 3rem;
+      padding: 0 1rem;
+    }
+
+    hr {
+      width: 80%;
+    }
+
+    .partnerCarousel {
+      .sliderDiv {
+        width: 100%;
+        padding: 1rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 5rem;
+
+    p {
+      font-size: 3.2rem;
+      padding: 0 1rem;
+    }
+
+    hr {
+      width: 100%;
+    }
+
+    .partnerCarousel {
+      .sliderDiv {
+        width: 100%;
+        padding: 1rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+}

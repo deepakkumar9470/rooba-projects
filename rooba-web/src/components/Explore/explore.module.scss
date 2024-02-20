@@ -1,0 +1,102 @@
+@import "../../styles/media.scss";
+@import "../../styles/variables.scss";
+@import "../../styles/mixin.scss";
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 10rem 15rem;
+
+  h2 {
+    font-size: 6.4rem;
+    font-weight: 100;
+    text-align: center;
+    font-family: "Times New Roman", Times, serif;
+  }
+
+  .explorecards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 5rem;
+    column-gap: 2rem;
+    padding: 6rem 4rem;
+
+    .item {
+      display: flex;
+      flex-direction: column;
+      gap: 2.5rem;
+      background-color: $link-color;
+      padding-top: 20rem;
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+      padding-bottom: 1rem;
+      border: 0.1rem solid $link-color2;
+      cursor: pointer;
+      &:nth-child(even) {
+        transform: translateY(2rem);
+      }
+      &:hover {
+        background-color: $light-grey;
+        transition: 0.2s ease all;
+      }
+
+      box-shadow: 0px 0px 20px -3px rgba(0, 0, 0, 0.1);
+      p {
+        font-size: 2.8rem;
+        font-weight: 400;
+        opacity: 0.4;
+      }
+      span {
+        font-size: 1.4rem;
+        font-weight: 400;
+        opacity: 0.4;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 5rem 2rem;
+
+    h2 {
+      font-size: 3.6rem;
+    }
+
+    .explorecards {
+      width: 100%;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 2.5rem;
+      padding: 6rem 1rem;
+
+      .item {
+        padding-top: 5rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 5rem 2rem;
+
+    h2 {
+      font-size: 3.6rem;
+    }
+
+    .explorecards {
+      width: 100%;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 2.5rem;
+      padding: 6rem 1rem;
+
+      .item {
+        padding-top: 5rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+}

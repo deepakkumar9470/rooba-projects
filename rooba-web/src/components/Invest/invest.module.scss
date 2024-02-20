@@ -1,0 +1,228 @@
+@import "../../styles/media.scss";
+@import "../../styles/variables.scss";
+@import "../../styles/mixin.scss";
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 2rem 10rem;
+
+  h2 {
+    font-size: 6rem;
+    font-weight: 200;
+    text-align: center;
+  }
+
+  .toptext {
+    text-align: start;
+    p {
+      font-size: 5rem;
+      font-weight: 200;
+      font-family: "Times New Roman", Times, serif;
+    }
+    .investText {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+
+      span {
+        font-size: 5rem;
+        font-weight: 800;
+        font-style: italic;
+        margin-left: 10rem;
+        font-family: "Times New Roman", Times, serif;
+      }
+      img {
+        width: 5rem;
+      }
+    }
+  }
+  .investWrapper {
+    display: flex;
+    padding: 1rem 0;
+
+    .accordion {
+      width: 100%;
+      max-width: 60rem;
+      margin: 0 auto;
+      padding: 2.5rem 5rem;
+      margin-top: 2rem;
+
+      .accordion_item {
+        border-bottom: 0.2rem solid $light-grey;
+        margin-bottom: 0.8rem;
+        overflow: hidden;
+
+        &:hover {
+          background-color: $link-color;
+          transition: 0.2s ease all;
+          border-left: 0.4rem solid $blue-color;
+        }
+
+        .accordion_title {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 1rem;
+          cursor: pointer;
+          font-size: 1.8rem;
+          opacity: 0.5;
+          font-weight: 500;
+          p {
+            font-size: 2.4rem;
+          }
+        }
+
+        .accordion_content {
+          width: 75%;
+          text-align: justify;
+          font-weight: 500;
+          padding: 1rem;
+          button {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            width: max-content;
+            margin-top: 2rem;
+            padding: 1.2rem 2rem;
+            font-size: 1.4rem;
+            font-weight: 500;
+            text-align: center;
+            color: $black;
+            border: 0.1rem solid $black;
+            background-color: transparent;
+            outline: none;
+            cursor: pointer;
+          }
+
+          p {
+            margin: 0;
+            font-size: 1.6rem;
+            opacity: 0.4;
+          }
+        }
+      }
+    }
+
+    .investImage {
+      flex: 1;
+      padding: 2.5rem 0;
+      position: relative;
+      .computerImg {
+        padding-top: 5rem;
+        cursor: pointer;
+      }
+
+      .formImg {
+        width: 40rem;
+        position: absolute;
+        top: 0;
+        right: 2rem;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .left {
+    flex: 1;
+  }
+
+  .right {
+    flex: 1;
+    background-color: $link-color;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 2rem 1rem;
+
+    h2 {
+      font-size: 4rem;
+    }
+
+    .toptext {
+      text-align: center;
+      p {
+        font-size: 4rem;
+        font-weight: 300;
+      }
+      .investText {
+        span {
+          font-size: 4rem;
+          margin-left: 15rem;
+        }
+      }
+    }
+    .investWrapper {
+      flex-direction: column;
+
+      .accordion {
+        width: 100%;
+        margin: 0 auto;
+        padding: 2rem 1.5rem;
+      }
+
+      .investImage {
+        width: 100%;
+        margin: 0 auto;
+        .computerImg {
+          padding-top: 2rem;
+        }
+
+        .formImg {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 2rem 1rem;
+
+    h2 {
+      font-size: 4rem;
+    }
+
+    .toptext {
+      text-align: center;
+      p {
+        font-size: 4rem;
+        font-weight: 300;
+      }
+      .investText {
+        span {
+          font-size: 4rem;
+          margin-left: 15rem;
+        }
+      }
+    }
+    .investWrapper {
+      flex-direction: column;
+
+      .accordion {
+        width: 100%;
+        margin: 0 auto;
+        padding: 2rem 1.5rem;
+      }
+
+      .investImage {
+        width: 100%;
+        margin: 0 auto;
+        .computerImg {
+          padding-top: 2rem;
+        }
+
+        .formImg {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+}

@@ -1,0 +1,77 @@
+@import "../../styles/media.scss";
+@import "../../styles/variables.scss";
+@import "../../styles/mixin.scss";
+
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 10rem;
+
+  h2 {
+    font-size: 5rem;
+    font-weight: 700;
+    text-align: center;
+    font-style: italic;
+    font-family: "Times New Roman", Times, serif;
+    span {
+      font-size: 5rem;
+      font-weight: 300;
+      margin-left: 20rem;
+      font-family: "Times New Roman", Times, serif;
+    }
+  }
+
+  p {
+    font-size: 1.6rem;
+    font-weight: 400;
+    text-align: center;
+    padding: 0 15rem;
+    cursor: pointer;
+    opacity: 0.5;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 2rem;
+
+    h2 {
+      font-size: 3.8rem;
+      span {
+        font-size: 3.8rem;
+        margin-left: 10rem;
+      }
+    }
+
+    p {
+      padding: 0 1rem;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 2rem;
+
+    h2 {
+      font-size: 3.8rem;
+      span {
+        font-size: 3.8rem;
+        margin-left: 10rem;
+      }
+    }
+
+    p {
+      padding: 0 1rem;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+}
